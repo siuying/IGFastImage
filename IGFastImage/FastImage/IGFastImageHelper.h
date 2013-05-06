@@ -14,5 +14,7 @@
 +(IGFastImageType) parseTypeWithData:(NSData*)data;
 +(CGSize) parseSizeForGifWithData:(NSData*)data;
 +(CGSize) parseSizeForPngWithData:(NSData*)data;
++(CGSize) parseSizeForJpegWithData:(NSData*)data;
++(CGSize) parseSizeForBmpWithData:(NSData*)data;
 
 @end

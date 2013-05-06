@@ -59,6 +59,12 @@ describe(@"IGFastImageHelperSpec", ^{
             NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"png"];
             expect([IGFastImageHelper parseSizeForPngWithData:data]).to.equal(CGSizeMake(30, 20));
         });
+        
+        it(@"should parse bmp", ^{
+            NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"bmp"];
+            expect([IGFastImageHelper parseSizeForBmpWithData:data]).to.equal(CGSizeMake(40, 27));
+            
+        });
     });
 });
 

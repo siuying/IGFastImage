@@ -20,6 +20,12 @@ struct FastImagePngSize
     uint32_t height;
 };
 
+struct FastImageBmpSize
+{
+    uint32_t width;
+    uint32_t height;
+};
+
 @implementation IGFastImageHelper
 
 +(IGFastImageType) parseTypeWithData:(NSData*)data {
@@ -71,6 +77,22 @@ struct FastImagePngSize
     
     const struct FastImagePngSize* size = (const struct FastImagePngSize*) buff;
     return CGSizeMake(CFSwapInt32BigToHost(size->width), CFSwapInt32BigToHost(size->height));
+}
+
++(CGSize) parseSizeForJpegWithData:(NSData*)data {
+    return CGSizeZero;
+}
+
++(CGSize) parseSizeForBmpWithData:(NSData*)data {
+    if ([data length] < 29) {
+        return CGSizeZero;
+    }
+
+    unsigned char buff[8];
+    [data getBytes:buff range:NSMakeRange(18, 8)];
+
+    const struct FastImageBmpSize* size = (const struct FastImageBmpSize*) buff;
+    return CGSizeMake(size->width, size->height);
 }
 
 @end
