@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54393FFA1737A32400917DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FF91737A32400917DAB /* UIKit.framework */; };
+		54393FFC1737A32400917DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FFB1737A32400917DAB /* Foundation.framework */; };
+		54393FFE1737A32400917DAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FFD1737A32400917DAB /* CoreGraphics.framework */; };
+		543940041737A32400917DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543940021737A32400917DAB /* InfoPlist.strings */; };
+		543940061737A32400917DAB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940051737A32400917DAB /* main.m */; };
+		5439400A1737A32400917DAB /* IGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940091737A32400917DAB /* IGAppDelegate.m */; };
+		5439400C1737A32400917DAB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5439400B1737A32400917DAB /* Default.png */; };
+		5439400E1737A32400917DAB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5439400D1737A32400917DAB /* Default@2x.png */; };
+		543940101737A32400917DAB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5439400F1737A32400917DAB /* Default-568h@2x.png */; };
+		543940181737A32400917DAB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 543940171737A32400917DAB /* SenTestingKit.framework */; };
+		543940191737A32400917DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FF91737A32400917DAB /* UIKit.framework */; };
+		5439401A1737A32400917DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FFB1737A32400917DAB /* Foundation.framework */; };
+		543940221737A32500917DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543940201737A32500917DAB /* InfoPlist.strings */; };
+		543940251737A32500917DAB /* IGFastImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940241737A32500917DAB /* IGFastImageTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5439401B1737A32400917DAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54393FEE1737A32300917DAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54393FF51737A32300917DAB;
+			remoteInfo = IGFastImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54393FF61737A32400917DAB /* IGFastImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGFastImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54393FF91737A32400917DAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		54393FFB1737A32400917DAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		54393FFD1737A32400917DAB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		543940011737A32400917DAB /* IGFastImage-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGFastImage-Info.plist"; sourceTree = "<group>"; };
+		543940031737A32400917DAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		543940051737A32400917DAB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		543940071737A32400917DAB /* IGFastImage-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IGFastImage-Prefix.pch"; sourceTree = "<group>"; };
+		543940081737A32400917DAB /* IGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGAppDelegate.h; sourceTree = "<group>"; };
+		543940091737A32400917DAB /* IGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGAppDelegate.m; sourceTree = "<group>"; };
+		5439400B1737A32400917DAB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5439400D1737A32400917DAB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		5439400F1737A32400917DAB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		543940161737A32400917DAB /* IGFastImageTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IGFastImageTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		543940171737A32400917DAB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5439401F1737A32400917DAB /* IGFastImageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGFastImageTests-Info.plist"; sourceTree = "<group>"; };
+		543940211737A32500917DAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		543940231737A32500917DAB /* IGFastImageTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGFastImageTests.h; sourceTree = "<group>"; };
+		543940241737A32500917DAB /* IGFastImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGFastImageTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54393FF31737A32300917DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54393FFA1737A32400917DAB /* UIKit.framework in Frameworks */,
+				54393FFC1737A32400917DAB /* Foundation.framework in Frameworks */,
+				54393FFE1737A32400917DAB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543940121737A32400917DAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543940181737A32400917DAB /* SenTestingKit.framework in Frameworks */,
+				543940191737A32400917DAB /* UIKit.framework in Frameworks */,
+				5439401A1737A32400917DAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54393FED1737A32300917DAB = {
+			isa = PBXGroup;
+			children = (
+				54393FFF1737A32400917DAB /* IGFastImage */,
+				5439401D1737A32400917DAB /* IGFastImageTests */,
+				54393FF81737A32400917DAB /* Frameworks */,
+				54393FF71737A32400917DAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54393FF71737A32400917DAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54393FF61737A32400917DAB /* IGFastImage.app */,
+				543940161737A32400917DAB /* IGFastImageTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54393FF81737A32400917DAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54393FF91737A32400917DAB /* UIKit.framework */,
+				54393FFB1737A32400917DAB /* Foundation.framework */,
+				54393FFD1737A32400917DAB /* CoreGraphics.framework */,
+				543940171737A32400917DAB /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54393FFF1737A32400917DAB /* IGFastImage */ = {
+			isa = PBXGroup;
+			children = (
+				543940081737A32400917DAB /* IGAppDelegate.h */,
+				543940091737A32400917DAB /* IGAppDelegate.m */,
+				543940001737A32400917DAB /* Supporting Files */,
+			);
+			path = IGFastImage;
+			sourceTree = "<group>";
+		};
+		543940001737A32400917DAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				543940011737A32400917DAB /* IGFastImage-Info.plist */,
+				543940021737A32400917DAB /* InfoPlist.strings */,
+				543940051737A32400917DAB /* main.m */,
+				543940071737A32400917DAB /* IGFastImage-Prefix.pch */,
+				5439400B1737A32400917DAB /* Default.png */,
+				5439400D1737A32400917DAB /* Default@2x.png */,
+				5439400F1737A32400917DAB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5439401D1737A32400917DAB /* IGFastImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				543940231737A32500917DAB /* IGFastImageTests.h */,
+				543940241737A32500917DAB /* IGFastImageTests.m */,
+				5439401E1737A32400917DAB /* Supporting Files */,
+			);
+			path = IGFastImageTests;
+			sourceTree = "<group>";
+		};
+		5439401E1737A32400917DAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5439401F1737A32400917DAB /* IGFastImageTests-Info.plist */,
+				543940201737A32500917DAB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54393FF51737A32300917DAB /* IGFastImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 543940281737A32500917DAB /* Build configuration list for PBXNativeTarget "IGFastImage" */;
+			buildPhases = (
+				54393FF21737A32300917DAB /* Sources */,
+				54393FF31737A32300917DAB /* Frameworks */,
+				54393FF41737A32300917DAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGFastImage;
+			productName = IGFastImage;
+			productReference = 54393FF61737A32400917DAB /* IGFastImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		543940151737A32400917DAB /* IGFastImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5439402B1737A32500917DAB /* Build configuration list for PBXNativeTarget "IGFastImageTests" */;
+			buildPhases = (
+				543940111737A32400917DAB /* Sources */,
+				543940121737A32400917DAB /* Frameworks */,
+				543940131737A32400917DAB /* Resources */,
+				543940141737A32400917DAB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5439401C1737A32400917DAB /* PBXTargetDependency */,
+			);
+			name = IGFastImageTests;
+			productName = IGFastImageTests;
+			productReference = 543940161737A32400917DAB /* IGFastImageTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54393FEE1737A32300917DAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IG;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Ignition Soft";
+			};
+			buildConfigurationList = 54393FF11737A32300917DAB /* Build configuration list for PBXProject "IGFastImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 54393FED1737A32300917DAB;
+			productRefGroup = 54393FF71737A32400917DAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54393FF51737A32300917DAB /* IGFastImage */,
+				543940151737A32400917DAB /* IGFastImageTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54393FF41737A32300917DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543940041737A32400917DAB /* InfoPlist.strings in Resources */,
+				5439400C1737A32400917DAB /* Default.png in Resources */,
+				5439400E1737A32400917DAB /* Default@2x.png in Resources */,
+				543940101737A32400917DAB /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543940131737A32400917DAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543940221737A32500917DAB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		543940141737A32400917DAB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54393FF21737A32300917DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543940061737A32400917DAB /* main.m in Sources */,
+				5439400A1737A32400917DAB /* IGAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543940111737A32400917DAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				543940251737A32500917DAB /* IGFastImageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5439401C1737A32400917DAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54393FF51737A32300917DAB /* IGFastImage */;
+			targetProxy = 5439401B1737A32400917DAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		543940021737A32400917DAB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543940031737A32400917DAB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		543940201737A32500917DAB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				543940211737A32500917DAB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		543940261737A32500917DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		543940271737A32500917DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		543940291737A32500917DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGFastImage/IGFastImage-Prefix.pch";
+				INFOPLIST_FILE = "IGFastImage/IGFastImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5439402A1737A32500917DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGFastImage/IGFastImage-Prefix.pch";
+				INFOPLIST_FILE = "IGFastImage/IGFastImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5439402C1737A32500917DAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGFastImage.app/IGFastImage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGFastImage/IGFastImage-Prefix.pch";
+				INFOPLIST_FILE = "IGFastImageTests/IGFastImageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5439402D1737A32500917DAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGFastImage.app/IGFastImage";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IGFastImage/IGFastImage-Prefix.pch";
+				INFOPLIST_FILE = "IGFastImageTests/IGFastImageTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54393FF11737A32300917DAB /* Build configuration list for PBXProject "IGFastImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543940261737A32500917DAB /* Debug */,
+				543940271737A32500917DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		543940281737A32500917DAB /* Build configuration list for PBXNativeTarget "IGFastImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				543940291737A32500917DAB /* Debug */,
+				5439402A1737A32500917DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5439402B1737A32500917DAB /* Build configuration list for PBXNativeTarget "IGFastImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5439402C1737A32500917DAB /* Debug */,
+				5439402D1737A32500917DAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54393FEE1737A32300917DAB /* Project object */;
+}
