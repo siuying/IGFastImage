@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F45831E5F8F40A4A8A5C7AA /* libPods-IGFastImageTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EA18CB202AB34399807963EF /* libPods-IGFastImageTests.a */; };
+		4BDA4155A59641D0ACB2EBC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58952ED326DE4283A7955A4B /* libPods.a */; };
 		54393FFA1737A32400917DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FF91737A32400917DAB /* UIKit.framework */; };
 		54393FFC1737A32400917DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FFB1737A32400917DAB /* Foundation.framework */; };
 		54393FFE1737A32400917DAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FFD1737A32400917DAB /* CoreGraphics.framework */; };
@@ -20,7 +22,24 @@
 		543940191737A32400917DAB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FF91737A32400917DAB /* UIKit.framework */; };
 		5439401A1737A32400917DAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FFB1737A32400917DAB /* Foundation.framework */; };
 		543940221737A32500917DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543940201737A32500917DAB /* InfoPlist.strings */; };
-		543940251737A32500917DAB /* IGFastImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940241737A32500917DAB /* IGFastImageTests.m */; };
+		543940341737A36300917DAB /* IGFastImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940331737A36300917DAB /* IGFastImage.m */; };
+		543940351737A36300917DAB /* IGFastImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940331737A36300917DAB /* IGFastImage.m */; };
+		543940381737A84900917DAB /* IGFastImageURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940371737A84900917DAB /* IGFastImageURLConnectionOperation.m */; };
+		543940391737A84900917DAB /* IGFastImageURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940371737A84900917DAB /* IGFastImageURLConnectionOperation.m */; };
+		5439403C1737ADFA00917DAB /* IGFastImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439403B1737ADFA00917DAB /* IGFastImageHelper.m */; };
+		5439403D1737ADFA00917DAB /* IGFastImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439403B1737ADFA00917DAB /* IGFastImageHelper.m */; };
+		543940401737AE4500917DAB /* IGFastImageHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439403E1737AE4500917DAB /* IGFastImageHelperSpec.m */; };
+		5439404C1737B00600917DAB /* faulty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 543940421737B00600917DAB /* faulty.jpg */; };
+		5439404D1737B00600917DAB /* test.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 543940441737B00600917DAB /* test.bmp */; };
+		5439404E1737B00600917DAB /* test.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 543940451737B00600917DAB /* test.bmp */; };
+		5439404F1737B00600917DAB /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 543940461737B00600917DAB /* test.gif */; };
+		543940501737B00600917DAB /* test.ico in Resources */ = {isa = PBXBuildFile; fileRef = 543940471737B00600917DAB /* test.ico */; };
+		543940511737B00600917DAB /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 543940481737B00600917DAB /* test.jpg */; };
+		543940521737B00600917DAB /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = 543940491737B00600917DAB /* test.png */; };
+		543940531737B00600917DAB /* test2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5439404A1737B00600917DAB /* test2.jpg */; };
+		543940541737B00600917DAB /* test3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5439404B1737B00600917DAB /* test3.jpg */; };
+		543940571737B01400917DAB /* IGSpecHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940561737B01400917DAB /* IGSpecHelper.m */; };
+		543940581737B36D00917DAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FFD1737A32400917DAB /* CoreGraphics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		066C5EDA8AAC4A418B6331DC /* Pods-IGFastImageTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IGFastImageTests.xcconfig"; path = "Pods/Pods-IGFastImageTests.xcconfig"; sourceTree = SOURCE_ROOT; };
 		54393FF61737A32400917DAB /* IGFastImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IGFastImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54393FF91737A32400917DAB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54393FFB1737A32400917DAB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -51,8 +71,27 @@
 		543940171737A32400917DAB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		5439401F1737A32400917DAB /* IGFastImageTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IGFastImageTests-Info.plist"; sourceTree = "<group>"; };
 		543940211737A32500917DAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		543940231737A32500917DAB /* IGFastImageTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGFastImageTests.h; sourceTree = "<group>"; };
-		543940241737A32500917DAB /* IGFastImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGFastImageTests.m; sourceTree = "<group>"; };
+		543940321737A36300917DAB /* IGFastImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGFastImage.h; path = FastImage/IGFastImage.h; sourceTree = "<group>"; };
+		543940331737A36300917DAB /* IGFastImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGFastImage.m; path = FastImage/IGFastImage.m; sourceTree = "<group>"; };
+		543940361737A84900917DAB /* IGFastImageURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGFastImageURLConnectionOperation.h; path = FastImage/IGFastImageURLConnectionOperation.h; sourceTree = "<group>"; };
+		543940371737A84900917DAB /* IGFastImageURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGFastImageURLConnectionOperation.m; path = FastImage/IGFastImageURLConnectionOperation.m; sourceTree = "<group>"; };
+		5439403A1737ADFA00917DAB /* IGFastImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGFastImageHelper.h; path = FastImage/IGFastImageHelper.h; sourceTree = "<group>"; };
+		5439403B1737ADFA00917DAB /* IGFastImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGFastImageHelper.m; path = FastImage/IGFastImageHelper.m; sourceTree = "<group>"; };
+		5439403E1737AE4500917DAB /* IGFastImageHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGFastImageHelperSpec.m; sourceTree = "<group>"; };
+		543940421737B00600917DAB /* faulty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faulty.jpg; sourceTree = "<group>"; };
+		543940441737B00600917DAB /* test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = test.bmp; sourceTree = "<group>"; };
+		543940451737B00600917DAB /* test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = test.bmp; sourceTree = "<group>"; };
+		543940461737B00600917DAB /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
+		543940471737B00600917DAB /* test.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = test.ico; sourceTree = "<group>"; };
+		543940481737B00600917DAB /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		543940491737B00600917DAB /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		5439404A1737B00600917DAB /* test2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test2.jpg; sourceTree = "<group>"; };
+		5439404B1737B00600917DAB /* test3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test3.jpg; sourceTree = "<group>"; };
+		543940551737B01400917DAB /* IGSpecHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGSpecHelper.h; sourceTree = "<group>"; };
+		543940561737B01400917DAB /* IGSpecHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGSpecHelper.m; sourceTree = "<group>"; };
+		58952ED326DE4283A7955A4B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4C04156F2994338BEF8AF79 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		EA18CB202AB34399807963EF /* libPods-IGFastImageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGFastImageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +102,7 @@
 				54393FFA1737A32400917DAB /* UIKit.framework in Frameworks */,
 				54393FFC1737A32400917DAB /* Foundation.framework in Frameworks */,
 				54393FFE1737A32400917DAB /* CoreGraphics.framework in Frameworks */,
+				4BDA4155A59641D0ACB2EBC5 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +113,8 @@
 				543940181737A32400917DAB /* SenTestingKit.framework in Frameworks */,
 				543940191737A32400917DAB /* UIKit.framework in Frameworks */,
 				5439401A1737A32400917DAB /* Foundation.framework in Frameworks */,
+				2F45831E5F8F40A4A8A5C7AA /* libPods-IGFastImageTests.a in Frameworks */,
+				543940581737B36D00917DAB /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +128,8 @@
 				5439401D1737A32400917DAB /* IGFastImageTests */,
 				54393FF81737A32400917DAB /* Frameworks */,
 				54393FF71737A32400917DAB /* Products */,
+				D4C04156F2994338BEF8AF79 /* Pods.xcconfig */,
+				066C5EDA8AAC4A418B6331DC /* Pods-IGFastImageTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +149,8 @@
 				54393FFB1737A32400917DAB /* Foundation.framework */,
 				54393FFD1737A32400917DAB /* CoreGraphics.framework */,
 				543940171737A32400917DAB /* SenTestingKit.framework */,
+				58952ED326DE4283A7955A4B /* libPods.a */,
+				EA18CB202AB34399807963EF /* libPods-IGFastImageTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +158,7 @@
 		54393FFF1737A32400917DAB /* IGFastImage */ = {
 			isa = PBXGroup;
 			children = (
+				5439402E1737A33800917DAB /* FastImage */,
 				543940081737A32400917DAB /* IGAppDelegate.h */,
 				543940091737A32400917DAB /* IGAppDelegate.m */,
 				543940001737A32400917DAB /* Supporting Files */,
@@ -136,9 +183,11 @@
 		5439401D1737A32400917DAB /* IGFastImageTests */ = {
 			isa = PBXGroup;
 			children = (
-				543940231737A32500917DAB /* IGFastImageTests.h */,
-				543940241737A32500917DAB /* IGFastImageTests.m */,
+				543940411737B00600917DAB /* fixtures */,
 				5439401E1737A32400917DAB /* Supporting Files */,
+				5439403E1737AE4500917DAB /* IGFastImageHelperSpec.m */,
+				543940551737B01400917DAB /* IGSpecHelper.h */,
+				543940561737B01400917DAB /* IGSpecHelper.m */,
 			);
 			path = IGFastImageTests;
 			sourceTree = "<group>";
@@ -152,6 +201,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5439402E1737A33800917DAB /* FastImage */ = {
+			isa = PBXGroup;
+			children = (
+				543940321737A36300917DAB /* IGFastImage.h */,
+				543940331737A36300917DAB /* IGFastImage.m */,
+				543940361737A84900917DAB /* IGFastImageURLConnectionOperation.h */,
+				543940371737A84900917DAB /* IGFastImageURLConnectionOperation.m */,
+				5439403A1737ADFA00917DAB /* IGFastImageHelper.h */,
+				5439403B1737ADFA00917DAB /* IGFastImageHelper.m */,
+			);
+			name = FastImage;
+			sourceTree = "<group>";
+		};
+		543940411737B00600917DAB /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				543940421737B00600917DAB /* faulty.jpg */,
+				543940431737B00600917DAB /* folder with spaces */,
+				543940451737B00600917DAB /* test.bmp */,
+				543940461737B00600917DAB /* test.gif */,
+				543940471737B00600917DAB /* test.ico */,
+				543940481737B00600917DAB /* test.jpg */,
+				543940491737B00600917DAB /* test.png */,
+				5439404A1737B00600917DAB /* test2.jpg */,
+				5439404B1737B00600917DAB /* test3.jpg */,
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
+		543940431737B00600917DAB /* folder with spaces */ = {
+			isa = PBXGroup;
+			children = (
+				543940441737B00600917DAB /* test.bmp */,
+			);
+			path = "folder with spaces";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 543940281737A32500917DAB /* Build configuration list for PBXNativeTarget "IGFastImage" */;
 			buildPhases = (
+				9D58352EE2364393A7921FB7 /* Check Pods Manifest.lock */,
 				54393FF21737A32300917DAB /* Sources */,
 				54393FF31737A32300917DAB /* Frameworks */,
 				54393FF41737A32300917DAB /* Resources */,
+				72C4A82B53424707A34FC063 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,10 +264,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5439402B1737A32500917DAB /* Build configuration list for PBXNativeTarget "IGFastImageTests" */;
 			buildPhases = (
+				6FD30A551D084A74970FB84F /* Check Pods Manifest.lock */,
 				543940111737A32400917DAB /* Sources */,
 				543940121737A32400917DAB /* Frameworks */,
 				543940131737A32400917DAB /* Resources */,
 				543940141737A32400917DAB /* ShellScript */,
+				BB2F61D9DF6F4548A1638EE8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -236,6 +326,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				543940221737A32500917DAB /* InfoPlist.strings in Resources */,
+				5439404C1737B00600917DAB /* faulty.jpg in Resources */,
+				5439404D1737B00600917DAB /* test.bmp in Resources */,
+				5439404E1737B00600917DAB /* test.bmp in Resources */,
+				5439404F1737B00600917DAB /* test.gif in Resources */,
+				543940501737B00600917DAB /* test.ico in Resources */,
+				543940511737B00600917DAB /* test.jpg in Resources */,
+				543940521737B00600917DAB /* test.png in Resources */,
+				543940531737B00600917DAB /* test2.jpg in Resources */,
+				543940541737B00600917DAB /* test3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +354,62 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		6FD30A551D084A74970FB84F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		72C4A82B53424707A34FC063 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		9D58352EE2364393A7921FB7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		BB2F61D9DF6F4548A1638EE8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-IGFastImageTests-resources.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -264,6 +419,9 @@
 			files = (
 				543940061737A32400917DAB /* main.m in Sources */,
 				5439400A1737A32400917DAB /* IGAppDelegate.m in Sources */,
+				543940341737A36300917DAB /* IGFastImage.m in Sources */,
+				543940381737A84900917DAB /* IGFastImageURLConnectionOperation.m in Sources */,
+				5439403C1737ADFA00917DAB /* IGFastImageHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +429,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				543940251737A32500917DAB /* IGFastImageTests.m in Sources */,
+				543940351737A36300917DAB /* IGFastImage.m in Sources */,
+				543940391737A84900917DAB /* IGFastImageURLConnectionOperation.m in Sources */,
+				5439403D1737ADFA00917DAB /* IGFastImageHelper.m in Sources */,
+				543940401737AE4500917DAB /* IGFastImageHelperSpec.m in Sources */,
+				543940571737B01400917DAB /* IGSpecHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +525,7 @@
 		};
 		543940291737A32500917DAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C04156F2994338BEF8AF79 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IGFastImage/IGFastImage-Prefix.pch";
@@ -374,6 +537,7 @@
 		};
 		5439402A1737A32500917DAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4C04156F2994338BEF8AF79 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IGFastImage/IGFastImage-Prefix.pch";
@@ -385,11 +549,13 @@
 		};
 		5439402C1737A32500917DAB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066C5EDA8AAC4A418B6331DC /* Pods-IGFastImageTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGFastImage.app/IGFastImage";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IGFastImage/IGFastImage-Prefix.pch";
@@ -402,11 +568,13 @@
 		};
 		5439402D1737A32500917DAB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 066C5EDA8AAC4A418B6331DC /* Pods-IGFastImageTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/IGFastImage.app/IGFastImage";
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "IGFastImage/IGFastImage-Prefix.pch";
@@ -436,6 +604,7 @@
 				5439402A1737A32500917DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5439402B1737A32500917DAB /* Build configuration list for PBXNativeTarget "IGFastImageTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +613,7 @@
 				5439402D1737A32500917DAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
