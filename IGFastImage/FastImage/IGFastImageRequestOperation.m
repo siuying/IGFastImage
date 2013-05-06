@@ -6,10 +6,10 @@
 //  Copyright (c) 2013年 Ignition Soft. All rights reserved.
 //
 
-#import "IGFastImageURLConnection.h"
+#import "IGFastImageRequestOperation.h"
 #import "IGFastImageHelper.h"
 
-@implementation IGFastImageURLConnection
+@implementation IGFastImageRequestOperation
 
 -(id) initWithRequest:(NSURLRequest*)request {
     self = [super initWithRequest:request];

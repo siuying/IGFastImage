@@ -24,8 +24,8 @@
 		543940221737A32500917DAB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 543940201737A32500917DAB /* InfoPlist.strings */; };
 		543940341737A36300917DAB /* IGFastImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940331737A36300917DAB /* IGFastImage.m */; };
 		543940351737A36300917DAB /* IGFastImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940331737A36300917DAB /* IGFastImage.m */; };
-		543940381737A84900917DAB /* IGFastImageURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940371737A84900917DAB /* IGFastImageURLConnection.m */; };
-		543940391737A84900917DAB /* IGFastImageURLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940371737A84900917DAB /* IGFastImageURLConnection.m */; };
+		543940381737A84900917DAB /* IGFastImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940371737A84900917DAB /* IGFastImageRequestOperation.m */; };
+		543940391737A84900917DAB /* IGFastImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940371737A84900917DAB /* IGFastImageRequestOperation.m */; };
 		5439403C1737ADFA00917DAB /* IGFastImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439403B1737ADFA00917DAB /* IGFastImageHelper.m */; };
 		5439403D1737ADFA00917DAB /* IGFastImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439403B1737ADFA00917DAB /* IGFastImageHelper.m */; };
 		543940401737AE4500917DAB /* IGFastImageHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439403E1737AE4500917DAB /* IGFastImageHelperSpec.m */; };
@@ -74,8 +74,8 @@
 		543940211737A32500917DAB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		543940321737A36300917DAB /* IGFastImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGFastImage.h; path = FastImage/IGFastImage.h; sourceTree = "<group>"; };
 		543940331737A36300917DAB /* IGFastImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGFastImage.m; path = FastImage/IGFastImage.m; sourceTree = "<group>"; };
-		543940361737A84900917DAB /* IGFastImageURLConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGFastImageURLConnection.h; path = FastImage/IGFastImageURLConnection.h; sourceTree = "<group>"; };
-		543940371737A84900917DAB /* IGFastImageURLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGFastImageURLConnection.m; path = FastImage/IGFastImageURLConnection.m; sourceTree = "<group>"; };
+		543940361737A84900917DAB /* IGFastImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGFastImageRequestOperation.h; path = FastImage/IGFastImageRequestOperation.h; sourceTree = "<group>"; };
+		543940371737A84900917DAB /* IGFastImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGFastImageRequestOperation.m; path = FastImage/IGFastImageRequestOperation.m; sourceTree = "<group>"; };
 		5439403A1737ADFA00917DAB /* IGFastImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGFastImageHelper.h; path = FastImage/IGFastImageHelper.h; sourceTree = "<group>"; };
 		5439403B1737ADFA00917DAB /* IGFastImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGFastImageHelper.m; path = FastImage/IGFastImageHelper.m; sourceTree = "<group>"; };
 		5439403E1737AE4500917DAB /* IGFastImageHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGFastImageHelperSpec.m; sourceTree = "<group>"; };
@@ -209,8 +209,8 @@
 			children = (
 				543940321737A36300917DAB /* IGFastImage.h */,
 				543940331737A36300917DAB /* IGFastImage.m */,
-				543940361737A84900917DAB /* IGFastImageURLConnection.h */,
-				543940371737A84900917DAB /* IGFastImageURLConnection.m */,
+				543940361737A84900917DAB /* IGFastImageRequestOperation.h */,
+				543940371737A84900917DAB /* IGFastImageRequestOperation.m */,
 				5439403A1737ADFA00917DAB /* IGFastImageHelper.h */,
 				5439403B1737ADFA00917DAB /* IGFastImageHelper.m */,
 			);
@@ -415,7 +415,7 @@
 				543940061737A32400917DAB /* main.m in Sources */,
 				5439400A1737A32400917DAB /* IGAppDelegate.m in Sources */,
 				543940341737A36300917DAB /* IGFastImage.m in Sources */,
-				543940381737A84900917DAB /* IGFastImageURLConnection.m in Sources */,
+				543940381737A84900917DAB /* IGFastImageRequestOperation.m in Sources */,
 				5439403C1737ADFA00917DAB /* IGFastImageHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,7 +425,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543940351737A36300917DAB /* IGFastImage.m in Sources */,
-				543940391737A84900917DAB /* IGFastImageURLConnection.m in Sources */,
+				543940391737A84900917DAB /* IGFastImageRequestOperation.m in Sources */,
 				5439403D1737ADFA00917DAB /* IGFastImageHelper.m in Sources */,
 				543940401737AE4500917DAB /* IGFastImageHelperSpec.m in Sources */,
 				543940571737B01400917DAB /* IGSpecHelper.m in Sources */,

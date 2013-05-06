@@ -8,7 +8,7 @@
 
 #import "IGFastImage.h"
 #import "IGFastImageHelper.h"
-#import "IGFastImageURLConnection.h"
+#import "IGFastImageRequestOperation.h"
 
 #define kLocalFileChunkSize 256
 
@@ -22,7 +22,7 @@
     self = [super init];
     if (self) {
         NSURLRequest* request = [NSURLRequest requestWithURL:url];
-        self.operation = [[IGFastImageURLConnection alloc] initWithRequest:request];
+        self.operation = [[IGFastImageRequestOperation alloc] initWithRequest:request];
         [self.operation start];
     }
     return self;

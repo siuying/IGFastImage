@@ -18,11 +18,11 @@ typedef enum {
     IGFastImageTypePNG          = 4
 } IGFastImageType;
 
-@class IGFastImageURLConnection;
+@class IGFastImageRequestOperation;
 
 @interface IGFastImage : NSObject
 
-@property (nonatomic, strong) IGFastImageURLConnection* operation;
+@property (nonatomic, strong) IGFastImageRequestOperation* operation;
 @property (nonatomic, strong) NSOperationQueue* queue;
 @property (nonatomic, strong) NSData* responseData;
 
