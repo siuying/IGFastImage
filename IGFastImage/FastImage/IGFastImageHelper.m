@@ -66,6 +66,26 @@ struct FastImageJpgSkip
     return IGFastImageTypeUnknown;
 }
 
+
++(CGSize) parseSizeWithData:(NSData*)data {
+    switch ([self parseTypeWithData:data]) {
+        case IGFastImageTypeBMP:
+            return [self parseSizeForBmpWithData:data];
+            break;
+        case IGFastImageTypeJPEG:
+            return [self parseSizeForJpegWithData:data];
+            break;
+        case IGFastImageTypePNG:
+            return [self parseSizeForPngWithData:data];
+            break;
+        case IGFastImageTypeGIF:
+            return [self parseSizeForGifWithData:data];
+            break;            
+        default:
+            return CGSizeZero;
+    }
+}
+
 +(CGSize) parseSizeForGifWithData:(NSData*)data {
     if ([data length] < 11) {
         return CGSizeZero;

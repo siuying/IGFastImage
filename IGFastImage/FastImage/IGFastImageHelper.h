@@ -20,6 +20,9 @@ typedef enum {
 @interface IGFastImageHelper : NSObject
 
 +(IGFastImageType) parseTypeWithData:(NSData*)data;
+
++(CGSize) parseSizeWithData:(NSData*)data;
+
 +(CGSize) parseSizeForGifWithData:(NSData*)data;
 +(CGSize) parseSizeForPngWithData:(NSData*)data;
 +(CGSize) parseSizeForJpegWithData:(NSData*)data;

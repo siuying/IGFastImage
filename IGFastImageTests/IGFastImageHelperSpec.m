@@ -54,12 +54,15 @@ describe(@"IGFastImageHelperSpec", ^{
             NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"gif"];
             expect([IGFastImageHelper parseSizeForGifWithData:data]).to.equal(CGSizeMake(17, 32));
         });
-        
+    });
+    describe(@"+parseSizeForPngWithData:", ^{
         it(@"should parse png", ^{
             NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"png"];
             expect([IGFastImageHelper parseSizeForPngWithData:data]).to.equal(CGSizeMake(30, 20));
         });
-        
+    });
+
+    describe(@"+parseSizeForJpegWithData:", ^{        
         it(@"should parse jpg", ^{
             NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"jpg"];
             expect([IGFastImageHelper parseSizeForJpegWithData:data]).to.equal(CGSizeMake(882, 470));
@@ -73,10 +76,34 @@ describe(@"IGFastImageHelperSpec", ^{
             NSData* faulty = [IGSpecHelper dataWithFixtureFile:@"faulty" type:@"jpg"];
             expect([IGFastImageHelper parseSizeForJpegWithData:faulty]).to.equal(CGSizeZero);
         });
+    });
 
+    describe(@"+parseSizeForBmpWithData:", ^{
         it(@"should parse bmp", ^{
             NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"bmp"];
             expect([IGFastImageHelper parseSizeForBmpWithData:data]).to.equal(CGSizeMake(40, 27));
+        });
+    });
+    
+    describe(@"+parseSizeWithData:", ^{
+        it(@"should parse bmp", ^{
+            NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"bmp"];
+            expect([IGFastImageHelper parseSizeWithData:data]).to.equal(CGSizeMake(40, 27));
+        });
+
+        it(@"should parse jpg", ^{
+            NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"jpg"];
+            expect([IGFastImageHelper parseSizeWithData:data]).to.equal(CGSizeMake(882, 470));
+        });
+
+        it(@"should parse png", ^{
+            NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"png"];
+            expect([IGFastImageHelper parseSizeWithData:data]).to.equal(CGSizeMake(30, 20));
+        });
+        
+        it(@"should parse gif", ^{
+            NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"gif"];
+            expect([IGFastImageHelper parseSizeWithData:data]).to.equal(CGSizeMake(17, 32));
         });
     });
 });
