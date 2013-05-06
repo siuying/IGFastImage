@@ -99,6 +99,9 @@ describe(@"IGFastImageHelperSpec", ^{
         it(@"should parse png", ^{
             NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"png"];
             expect([IGFastImageHelper parseSizeWithData:data]).to.equal(CGSizeMake(30, 20));
+            
+            NSData* data2 = [IGSpecHelper dataWithFixtureFile:@"test2" type:@"png"];
+            expect([IGFastImageHelper parseSizeWithData:data2]).to.equal(CGSizeMake(48, 48));
         });
         
         it(@"should parse gif", ^{

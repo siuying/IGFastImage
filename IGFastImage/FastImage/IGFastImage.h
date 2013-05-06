@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import "AFHTTPClient.h"
+
 typedef enum {
     IGFastImageTypeUnknown      = 0,
     IGFastImageTypeBMP          = 1,
@@ -16,15 +18,18 @@ typedef enum {
     IGFastImageTypePNG          = 4
 } IGFastImageType;
 
+@class IGFastImageURLConnection;
+
 @interface IGFastImage : NSObject
 
-@property (nonatomic, strong) NSURL* url;
+@property (nonatomic, strong) IGFastImageURLConnection* operation;
+@property (nonatomic, strong) NSOperationQueue* queue;
 @property (nonatomic, strong) NSData* responseData;
 
 -(id) initWithURLString:(NSString*)urlString;
 -(id) initWithURL:(NSURL*)url;
--(id) initWithFile:(NSString*)file;
 
--(IGFastImageType) parseType;
+-(IGFastImageType) type;
+-(CGSize) size;
 
 @end
