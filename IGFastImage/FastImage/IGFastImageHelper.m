@@ -26,6 +26,17 @@ struct FastImageBmpSize
     uint32_t height;
 };
 
+struct FastImageJpgSize
+{
+    uint16_t height;
+    uint16_t width;
+};
+
+struct FastImageJpgSkip
+{
+    uint16_t length;
+};
+
 @implementation IGFastImageHelper
 
 +(IGFastImageType) parseTypeWithData:(NSData*)data {
@@ -80,6 +91,82 @@ struct FastImageBmpSize
 }
 
 +(CGSize) parseSizeForJpegWithData:(NSData*)data {
+    IGFastImageJPGParseState state = IGFastImageJPGParseStateBegin;
+    NSUInteger offset = 0U;
+
+    while (true) {
+        if ([data length] < offset) {
+            return CGSizeZero;
+        }
+
+        switch (state) {
+            case IGFastImageJPGParseStateBegin:
+            {
+                if ([data length] < 2) {
+                    return CGSizeZero;
+                }
+                offset += 2U;
+                state = IGFastImageJPGParseStateStarted;
+            }
+            break;
+            
+            case IGFastImageJPGParseStateStarted:
+            {
+                unsigned char buff[1];
+                [data getBytes:buff range:NSMakeRange(offset++, 1)];
+                if (buff[0] == 0xFF) {
+                    state = IGFastImageJPGParseStateSof;
+                } else {
+                    state = IGFastImageJPGParseStateStarted;
+                }
+            }
+            break;
+            
+            case IGFastImageJPGParseStateSof:
+            {
+                unsigned char buff[1];
+                [data getBytes:buff range:NSMakeRange(offset++, 1)];
+                
+                if (buff[0] >= 0xE0 && buff[0] <= 0xEF) {
+                    state = IGFastImageJPGParseStateSkipFrame;
+                } else if ((buff[0] >= 0xC0 && buff[0] <= 0xC3) ||
+                           (buff[0] >= 0xC5 && buff[0] <= 0xC7) ||
+                           (buff[0] >= 0xC9 && buff[0] <= 0xCB) ||
+                           (buff[0] >= 0xCD && buff[0] <= 0xCF)) {
+                    state = IGFastImageJPGParseStateReadSize;
+                } else if (buff[0] == 0xFF) {
+                    state = IGFastImageJPGParseStateSof;
+                } else if (buff[0] == 0xD9) {
+                    // EOI marker
+                    return CGSizeZero;
+                } else {
+                    state = IGFastImageJPGParseStateSkipFrame;
+                }
+            }
+            break;
+
+            case IGFastImageJPGParseStateSkipFrame:
+            {
+                unsigned char buff[2];
+                [data getBytes:buff range:NSMakeRange(offset++, 2)];
+                
+                const struct FastImageJpgSkip* skip = (const struct FastImageJpgSkip*) buff;
+                offset += (CFSwapInt16BigToHost(skip->length) - 2);
+                state = IGFastImageJPGParseStateStarted;
+            }
+            break;
+                
+            case IGFastImageJPGParseStateReadSize:
+            {
+                unsigned char buff[8];
+                [data getBytes:buff range:NSMakeRange(offset+3, 4)];
+                
+                const struct FastImageJpgSize* size = (const struct FastImageJpgSize*) buff;
+                return CGSizeMake(CFSwapInt16BigToHost(size->width), CFSwapInt16BigToHost(size->height));
+            }
+            break;
+        }
+    }
     return CGSizeZero;
 }
 

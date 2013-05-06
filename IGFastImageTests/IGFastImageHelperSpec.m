@@ -60,10 +60,23 @@ describe(@"IGFastImageHelperSpec", ^{
             expect([IGFastImageHelper parseSizeForPngWithData:data]).to.equal(CGSizeMake(30, 20));
         });
         
+        it(@"should parse jpg", ^{
+            NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"jpg"];
+            expect([IGFastImageHelper parseSizeForJpegWithData:data]).to.equal(CGSizeMake(882, 470));
+            
+            NSData* data2 = [IGSpecHelper dataWithFixtureFile:@"test2" type:@"jpg"];
+            expect([IGFastImageHelper parseSizeForJpegWithData:data2]).to.equal(CGSizeMake(250, 188));
+            
+            NSData* data3 = [IGSpecHelper dataWithFixtureFile:@"test3" type:@"jpg"];
+            expect([IGFastImageHelper parseSizeForJpegWithData:data3]).to.equal(CGSizeMake(630, 367));
+            
+            NSData* faulty = [IGSpecHelper dataWithFixtureFile:@"faulty" type:@"jpg"];
+            expect([IGFastImageHelper parseSizeForJpegWithData:faulty]).to.equal(CGSizeZero);
+        });
+
         it(@"should parse bmp", ^{
             NSData* data = [IGSpecHelper dataWithFixtureFile:@"test" type:@"bmp"];
             expect([IGFastImageHelper parseSizeForBmpWithData:data]).to.equal(CGSizeMake(40, 27));
-            
         });
     });
 });

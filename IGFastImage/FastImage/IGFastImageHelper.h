@@ -9,6 +9,14 @@
 #import <Foundation/Foundation.h>
 #import "IGFastImage.h"
 
+typedef enum {
+    IGFastImageJPGParseStateBegin             = 0,
+    IGFastImageJPGParseStateStarted           = 1,
+    IGFastImageJPGParseStateSof               = 2,
+    IGFastImageJPGParseStateSkipFrame         = 3,
+    IGFastImageJPGParseStateReadSize          = 4
+} IGFastImageJPGParseState;
+
 @interface IGFastImageHelper : NSObject
 
 +(IGFastImageType) parseTypeWithData:(NSData*)data;

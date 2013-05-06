@@ -30,7 +30,6 @@
 		5439403D1737ADFA00917DAB /* IGFastImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439403B1737ADFA00917DAB /* IGFastImageHelper.m */; };
 		543940401737AE4500917DAB /* IGFastImageHelperSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 5439403E1737AE4500917DAB /* IGFastImageHelperSpec.m */; };
 		5439404C1737B00600917DAB /* faulty.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 543940421737B00600917DAB /* faulty.jpg */; };
-		5439404D1737B00600917DAB /* test.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 543940441737B00600917DAB /* test.bmp */; };
 		5439404E1737B00600917DAB /* test.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 543940451737B00600917DAB /* test.bmp */; };
 		5439404F1737B00600917DAB /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = 543940461737B00600917DAB /* test.gif */; };
 		543940501737B00600917DAB /* test.ico in Resources */ = {isa = PBXBuildFile; fileRef = 543940471737B00600917DAB /* test.ico */; };
@@ -79,7 +78,6 @@
 		5439403B1737ADFA00917DAB /* IGFastImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGFastImageHelper.m; path = FastImage/IGFastImageHelper.m; sourceTree = "<group>"; };
 		5439403E1737AE4500917DAB /* IGFastImageHelperSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGFastImageHelperSpec.m; sourceTree = "<group>"; };
 		543940421737B00600917DAB /* faulty.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = faulty.jpg; sourceTree = "<group>"; };
-		543940441737B00600917DAB /* test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = test.bmp; sourceTree = "<group>"; };
 		543940451737B00600917DAB /* test.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = test.bmp; sourceTree = "<group>"; };
 		543940461737B00600917DAB /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		543940471737B00600917DAB /* test.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = test.ico; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 			isa = PBXGroup;
 			children = (
 				543940421737B00600917DAB /* faulty.jpg */,
-				543940431737B00600917DAB /* folder with spaces */,
 				543940451737B00600917DAB /* test.bmp */,
 				543940461737B00600917DAB /* test.gif */,
 				543940471737B00600917DAB /* test.ico */,
@@ -228,14 +225,6 @@
 				5439404B1737B00600917DAB /* test3.jpg */,
 			);
 			path = fixtures;
-			sourceTree = "<group>";
-		};
-		543940431737B00600917DAB /* folder with spaces */ = {
-			isa = PBXGroup;
-			children = (
-				543940441737B00600917DAB /* test.bmp */,
-			);
-			path = "folder with spaces";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,7 +316,6 @@
 			files = (
 				543940221737A32500917DAB /* InfoPlist.strings in Resources */,
 				5439404C1737B00600917DAB /* faulty.jpg in Resources */,
-				5439404D1737B00600917DAB /* test.bmp in Resources */,
 				5439404E1737B00600917DAB /* test.bmp in Resources */,
 				5439404F1737B00600917DAB /* test.gif in Resources */,
 				543940501737B00600917DAB /* test.ico in Resources */,
