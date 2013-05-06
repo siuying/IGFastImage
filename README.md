@@ -31,7 +31,7 @@ If you use CocoaPods, add following line to your Podfile:
 pod 'IGFastImage'
 ```
 
-Otherwise, add files under IFFastImage/FastImage/*, as well as AFNetworking and its dependency to your project.
+Otherwise, add files under ```IGFastImage/FastImage/*```, as well as AFNetworking and its dependency to your project.
 
 ## References
 
