@@ -22,8 +22,8 @@
 
 - (void)connection:(NSURLConnection __unused *)connection
     didReceiveData:(NSData *)data {
-    [self checkType];
     [super connection:connection didReceiveData:data];
+    [self checkType];
 }
 
 -(void) checkType {
