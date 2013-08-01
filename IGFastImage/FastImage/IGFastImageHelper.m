@@ -115,7 +115,7 @@ struct FastImageJpgSkip
     NSUInteger offset = 0U;
 
     while (true) {
-        if ([data length] < offset) {
+        if ([data length] <= offset) {
             return CGSizeZero;
         }
 
