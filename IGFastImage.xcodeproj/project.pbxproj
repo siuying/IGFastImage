@@ -41,6 +41,7 @@
 		543940581737B36D00917DAB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54393FFD1737A32400917DAB /* CoreGraphics.framework */; };
 		5439405A1737C9EE00917DAB /* IGFastImageSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 543940591737C9EE00917DAB /* IGFastImageSpec.m */; };
 		5439405C1737E05900917DAB /* test2.png in Resources */ = {isa = PBXBuildFile; fileRef = 5439405B1737E05900917DAB /* test2.png */; };
+		54535E9717BE4A150056AB77 /* test4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54535E9617BE4A150056AB77 /* test4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		543940561737B01400917DAB /* IGSpecHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGSpecHelper.m; sourceTree = "<group>"; };
 		543940591737C9EE00917DAB /* IGFastImageSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGFastImageSpec.m; sourceTree = "<group>"; };
 		5439405B1737E05900917DAB /* test2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test2.png; sourceTree = "<group>"; };
+		54535E9617BE4A150056AB77 /* test4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test4.jpg; sourceTree = "<group>"; };
 		58952ED326DE4283A7955A4B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4C04156F2994338BEF8AF79 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		EA18CB202AB34399807963EF /* libPods-IGFastImageTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IGFastImageTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -229,6 +231,7 @@
 				543940491737B00600917DAB /* test.png */,
 				5439404A1737B00600917DAB /* test2.jpg */,
 				5439404B1737B00600917DAB /* test3.jpg */,
+				54535E9617BE4A150056AB77 /* test4.jpg */,
 			);
 			path = fixtures;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				543940221737A32500917DAB /* InfoPlist.strings in Resources */,
+				54535E9717BE4A150056AB77 /* test4.jpg in Resources */,
 				5439404C1737B00600917DAB /* faulty.jpg in Resources */,
 				5439404E1737B00600917DAB /* test.bmp in Resources */,
 				5439404F1737B00600917DAB /* test.gif in Resources */,
