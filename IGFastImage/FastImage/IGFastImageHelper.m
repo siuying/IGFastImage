@@ -125,6 +125,7 @@ struct FastImageJpgSkip
                 if ([data length] < 2) {
                     return CGSizeZero;
                 }
+
                 offset += 2U;
                 state = IGFastImageJPGParseStateStarted;
             }
@@ -132,6 +133,10 @@ struct FastImageJpgSkip
             
             case IGFastImageJPGParseStateStarted:
             {
+                if ([data length] <= offset+1) {
+                    return CGSizeZero;
+                }
+
                 unsigned char buff[1];
                 [data getBytes:buff range:NSMakeRange(offset++, 1)];
                 if (buff[0] == 0xFF) {
@@ -144,6 +149,10 @@ struct FastImageJpgSkip
             
             case IGFastImageJPGParseStateSof:
             {
+                if ([data length] <= offset+1) {
+                    return CGSizeZero;
+                }
+
                 unsigned char buff[1];
                 [data getBytes:buff range:NSMakeRange(offset++, 1)];
                 
@@ -167,6 +176,10 @@ struct FastImageJpgSkip
 
             case IGFastImageJPGParseStateSkipFrame:
             {
+                if ([data length] <= offset+2) {
+                    return CGSizeZero;
+                }
+
                 unsigned char buff[2];
                 [data getBytes:buff range:NSMakeRange(offset++, 2)];
                 
@@ -178,7 +191,11 @@ struct FastImageJpgSkip
                 
             case IGFastImageJPGParseStateReadSize:
             {
-                unsigned char buff[8];
+                if ([data length] <= offset+7) {
+                    return CGSizeZero;
+                }
+
+                unsigned char buff[7];
                 [data getBytes:buff range:NSMakeRange(offset+3, 4)];
                 
                 const struct FastImageJpgSize* size = (const struct FastImageJpgSize*) buff;
