@@ -1,19 +1,23 @@
 PODS:
-  - AFNetworking (1.2.1)
+  - AFNetworking (2.0.0-RC2):
+    - AFNetworking/Core
+    - AFNetworking/UIKit+AFNetworking
+  - AFNetworking/Core (2.0.0-RC2)
+  - AFNetworking/UIKit+AFNetworking (2.0.0-RC2)
   - Expecta (0.2.1)
   - OCMock (2.1.1)
   - Specta (0.1.8)
 
 DEPENDENCIES:
-  - AFNetworking
+  - AFNetworking (= 2.0.0-RC2)
   - Expecta
   - OCMock (~> 2.1.1)
   - Specta
 
 SPEC CHECKSUMS:
-  AFNetworking: 616da0028916ce296f5c3cef74e5552eb4e10e13
+  AFNetworking: 6b4bff71172dc36dd93b035c1cb52dd97d7ce428
   Expecta: d46fb1bd78c90a83da0158b9b1e108de106e369f
   OCMock: 79212e5e328378af5cfd6edb5feacfd6c49cd8a3
   Specta: 8a215d36842f2d29e888786937d1bf7f8725f780
 
-COCOAPODS: 0.19.1
+COCOAPODS: 0.23.0

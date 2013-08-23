@@ -1,6 +1,6 @@
-platform :ios, '5.0'
+platform :ios, '7.0'
 
-pod 'AFNetworking'
+pod 'AFNetworking', '2.0.0-RC2'
 
 target :IGFastImageTests do
   pod 'Specta'
