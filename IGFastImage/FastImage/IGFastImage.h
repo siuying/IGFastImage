@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import "AFHTTPClient.h"
-
 typedef enum {
     IGFastImageTypeUnknown      = 0,
     IGFastImageTypeBMP          = 1,
