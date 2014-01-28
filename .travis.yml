@@ -1,0 +1,3 @@
+rvm: 1.9.3
+language: objective-c
+script: xcodebuild -workspace IGFastImage.xcworkspace -scheme IGFastImage -sdk iphonesimulator7.0 test

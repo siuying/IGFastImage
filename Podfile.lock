@@ -19,9 +19,9 @@ DEPENDENCIES:
   - Specta (~> 0.2.1)
 
 SPEC CHECKSUMS:
-  AFNetworking: 22de50ae71ab1c4859773f61068d6fcd1d8f9a4d
+  AFNetworking: e663917201cdb73f4ad2ba239ad35be8dc9a1e3c
   Expecta: dbc4a27fabb853bdd2e907e33f11ee43a9a47d0c
   OCMock: 79212e5e328378af5cfd6edb5feacfd6c49cd8a3
   Specta: 2d06220591110c6d9757d8be8ecf8e63aa40dc2a
 
-COCOAPODS: 0.27.1
+COCOAPODS: 0.29.0
