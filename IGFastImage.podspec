@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "IGFastImage"
-  s.version = "1.2.1"
+  s.version = "1.2.2"
   s.ios.deployment_target = "6.0"
   s.osx.deployment_target = "10.8"
   s.summary = "Finds the size and type of an image given its uri by fetching as little as needed."
