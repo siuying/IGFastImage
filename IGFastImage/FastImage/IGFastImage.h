@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+#if __IPHONE_OS_VERSION_MIN_REQUIRED
+#import <CoreGraphics/CoreGraphics.h>
+#endif
+
 typedef enum {
     IGFastImageTypeUnknown      = 0,
     IGFastImageTypeBMP          = 1,

@@ -7,6 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+
+#if __IPHONE_OS_VERSION_MIN_REQUIRED
+#import <CoreGraphics/CoreGraphics.h>
+#endif
+
 #import "IGFastImage.h"
 
 typedef enum {

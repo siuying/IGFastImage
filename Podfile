@@ -1,9 +1,9 @@
-platform :ios, '6.0'
+platform :ios, '7.0'
 
-pod 'AFNetworking/UIKit', '~> 2.0.0'
+pod 'AFNetworking/NSURLConnection', '~> 2.0'
 
 target :IGFastImageTests do
-  pod 'Specta', '~> 0.2.1'
-  pod 'Expecta', '~> 0.2.3'
-  pod 'OCMock', '~> 2.1.1'
+  pod 'Specta'
+  pod 'Expecta'
+  pod 'OCMock'
 end

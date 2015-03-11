@@ -32,8 +32,8 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "543940151737A32400917DAB"
-               BuildableName = "IGFastImageTests.octest"
+               BlueprintIdentifier = "54D902F11AB02E9A005BA2ED"
+               BuildableName = "IGFastImageTests.xctest"
                BlueprintName = "IGFastImageTests"
                ReferencedContainer = "container:IGFastImage.xcodeproj">
             </BuildableReference>

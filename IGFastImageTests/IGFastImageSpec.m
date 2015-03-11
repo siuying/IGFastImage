@@ -4,6 +4,8 @@
 //
 //  Created by: Chong Francis
 //
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
 #import "Specta.h"
 #define EXP_SHORTHAND
