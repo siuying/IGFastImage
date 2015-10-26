@@ -250,6 +250,7 @@
 				54393FF31737A32300917DAB /* Frameworks */,
 				54393FF41737A32300917DAB /* Resources */,
 				72C4A82B53424707A34FC063 /* Copy Pods Resources */,
+				B0958E09CBF46A56C85B8B79 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -269,6 +270,7 @@
 				54D902EF1AB02E9A005BA2ED /* Frameworks */,
 				54D902F01AB02E9A005BA2ED /* Resources */,
 				43FEB059C1321A21612B4580 /* Copy Pods Resources */,
+				A511AF34B6010183DB91AEAF /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -388,6 +390,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		A511AF34B6010183DB91AEAF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IGFastImageTests/Pods-IGFastImageTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0958E09CBF46A56C85B8B79 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		E841283E6637DE26EE0ED167 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

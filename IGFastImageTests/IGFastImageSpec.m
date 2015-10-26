@@ -25,12 +25,12 @@ describe(@"IGFastImageSpec", ^{
         });
         
         it(@"parse large remote URL", ^{
-            NSURL* url = [NSURL URLWithString:@"http://upload.wikimedia.org/wikipedia/commons/b/b4/Mardin_1350660_1350692_33_images.jpg"];
+            NSURL* url = [NSURL URLWithString:@"https://upload.wikimedia.org/wikipedia/commons/b/b4/Mardin_1350660_1350692_33_images.jpg"];
             IGFastImage* image = [[IGFastImage alloc] initWithURL:url];
             expect(image.type).to.equal(IGFastImageTypeJPEG);
             expect(image.size).to.equal(CGSizeMake(9545, 6623));
             
-            url = [NSURL URLWithString:@"http://farm8.staticflickr.com/7409/9523078856_516f335144_o.jpg"];
+            url = [NSURL URLWithString:@"https://farm8.staticflickr.com/7409/9523078856_516f335144_o.jpg"];
             image = [[IGFastImage alloc] initWithURL:url];
             expect(image.type).to.equal(IGFastImageTypeJPEG);
             expect(image.size).to.equal(CGSizeMake(4300, 2860));
