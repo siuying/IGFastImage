@@ -9,7 +9,7 @@
 #import "IGFastImage.h"
 #import "AFHTTPRequestOperation.h"
 
-@interface IGFastImageRequestOperation : AFHTTPRequestOperation
+@interface IGFastImageRequestOperation : NSOperation
 
 @property (nonatomic, assign) CGSize size;
 @property (nonatomic, assign) IGFastImageType type;

@@ -33,4 +33,6 @@ typedef enum {
 -(IGFastImageType) type;
 -(CGSize) size;
 
++(NSOperationQueue*) sharedQueue;
+
 @end

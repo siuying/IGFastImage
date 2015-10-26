@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
   s.name = "IGFastImage"
-  s.version = "1.2.2"
-  s.ios.deployment_target = "6.0"
-  s.osx.deployment_target = "10.8"
+  s.version = "2.0.0"
+  s.ios.deployment_target = "7.0"
+  s.osx.deployment_target = "10.9"
   s.summary = "Finds the size and type of an image given its uri by fetching as little as needed."
   s.homepage = "https://github.com/siuying/IGFastImage"
   s.license = { :type => 'MIT', :file => 'LICENSE' }
@@ -12,17 +12,4 @@ Pod::Spec.new do |s|
   s.ios.frameworks = 'SystemConfiguration', 'MobileCoreServices'
   s.osx.frameworks = 'SystemConfiguration'
   s.requires_arc = true
-  s.prefix_header_contents = <<-EOS
-#ifdef __OBJC__
-  #import <Foundation/Foundation.h>
-#endif
-
-#if __IPHONE_OS_VERSION_MIN_REQUIRED
-  #import <MobileCoreServices/MobileCoreServices.h>
-#endif
-
-#import <SystemConfiguration/SystemConfiguration.h>
-  EOS
-
-  s.dependency 'AFNetworking/NSURLConnection', '~> 2.0'
 end
