@@ -9,7 +9,5 @@ Pod::Spec.new do |s|
   s.author = { "Francis Chong" => "francis@ignition.hk" }
   s.source = { :git => "https://github.com/siuying/IGFastImage.git", :tag => s.version.to_s }
   s.source_files = 'IGFastImage/FastImage/*.{h,m}'
-  s.ios.frameworks = 'SystemConfiguration', 'MobileCoreServices'
-  s.osx.frameworks = 'SystemConfiguration'
   s.requires_arc = true
 end

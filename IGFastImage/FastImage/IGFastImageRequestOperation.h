@@ -7,7 +7,6 @@
 //
 
 #import "IGFastImage.h"
-#import "AFHTTPRequestOperation.h"
 
 @interface IGFastImageRequestOperation : NSOperation
 
